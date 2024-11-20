@@ -136,11 +136,11 @@ module.log_norg_file = function(event)
 		}
 
 		if workspace_title_line == nil then
-			table.insert(lines, 1, "** " .. workspace_title)
+			table.insert(lines, 1, "*** " .. workspace_title)
 		end
 
 		if worklog_title_line == nil then
-			table.insert(lines, 1, "* " .. module.config.public.heading)
+			table.insert(lines, 1, "** " .. module.config.public.heading)
 		end
 
 		if workspace_title_line ~= nil then
