@@ -79,7 +79,7 @@ module.log_norg_file = function(event)
 		local workspace_title_line = nil
 
 		local worklog_title_tmpl = [[
-      ((heading1 title: (paragraph_segment) @title)
+      ((heading2 title: (paragraph_segment) @title)
         (#eq? @title "%s"))
     ]]
 
@@ -93,7 +93,7 @@ module.log_norg_file = function(event)
 
 		if worklog_title_line ~= nil then
 			local workspace_title_tmpl = [[
-        ((heading2 title: (paragraph_segment) @workspace)
+        ((heading3 title: (paragraph_segment) @workspace)
           (#eq? @workspace "%s"))
       ]]
 			treesitter.execute_query(
