@@ -59,7 +59,6 @@ module.log_norg_file = function(event)
 		col = 1,
 		hide = true,
 	})
-
 	vim.api.nvim_win_call(win, function()
 		local ok = pcall(vim.api.nvim_command, ":Neorg journal today")
 
